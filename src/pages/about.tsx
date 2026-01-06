@@ -15,11 +15,11 @@ const AboutPage = (): React.ReactElement => {
       <div className="mt-8">
         <H level={hLevel.h2}>Bio</H>
         <p className="mt-4 font-light leading-relaxed">
-          I am a researcher specializing in Human-Centered AI and Human-Computer Interaction.
-          I have presented my work at top-tier conferences including CHI, CSCW, and HCOMP. 
-          
-
-.
+          Human-Centered AI | Bridging Cultural Gaps in AI | Data Scientist.
+          My work combines quantitative and qualitative research methods, including large-scale social network
+          analysis, advanced NLP, and AI system design.
+          I am passionate about building AI systems that are not only technically robust but also socially impactful.
+          I thrive at the intersection of research, engineering, and real-world application.
         </p>
       </div>
 
