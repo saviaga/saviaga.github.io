@@ -18,7 +18,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "predeploy": "npm run build",
-    "deploy": "gh-pages --dist ./public"
+    "deploy": "gh-pages --dist ./public --branch gh-pages"
   },
   "dependencies": {
     "@gatsbyjs/reach-router": "^2.0.1",
