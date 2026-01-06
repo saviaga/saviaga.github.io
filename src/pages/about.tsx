@@ -16,7 +16,10 @@ const AboutPage = (): React.ReactElement => {
         <H level={hLevel.h2}>Bio</H>
         <p className="mt-4 font-light leading-relaxed">
           I am a researcher specializing in Human-Centered AI and Human-Computer Interaction.
+          I have presented my work at top-tier conferences including CHI, CSCW, and HCOMP. 
           
+
+.
         </p>
       </div>
 
