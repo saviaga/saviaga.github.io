@@ -1,0 +1,20 @@
+# Gatsby
+node_modules/
+.cache/
+public
+.idea
+.vscode
+
+# Jekyll (legacy)
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+
+# System
+.DS_Store
+
+# Backup directory
+# jekyll-backup/  # Keep this commented to preserve Jekyll backup in git for reference
