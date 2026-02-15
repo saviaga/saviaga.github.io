@@ -15,11 +15,9 @@ const AboutPage = (): React.ReactElement => {
       <div className="mt-8">
         <H level={hLevel.h2}>Bio</H>
         <p className="mt-4 font-light leading-relaxed">
-          Human-Centered AI | Bridging Cultural Gaps in AI | Data Scientist.
-          My work combines quantitative and qualitative research methods, including large-scale social network
-          analysis, advanced NLP, and AI system design.
-          I am passionate about building AI systems that are not only technically robust but also socially impactful.
-          I thrive at the intersection of research, engineering, and real-world application.
+        I am a Human Centered AI researcher working at the intersection of technology, society, and design. My research explores how artificial intelligence shapes human behavior, decision making, and social systems, with a strong focus on responsible and equitable innovation.
+        I combine quantitative and qualitative methods, including large scale social network analysis, advanced natural language processing, and the design and evaluation of AI systems in real world contexts.
+        I am driven by the goal of building intelligent systems that are not only technically advanced, but socially responsible, inclusive, and aligned with human values. My work bridges research, engineering, and practice to ensure AI serves people and communities in meaningful ways.
         </p>
       </div>
 

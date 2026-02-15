@@ -6,9 +6,9 @@ export const profile: Profile = {
   lastName: 'Flores-Saviaga, PhD.',
   position: 'Human-Centered AI & HCI Researcher',
   summary: [
-    'Researcher focusing on Human-Centered AI and Human-Computer Interaction',
-    'Research presentations at top-tier conferences (CHI, CSCW, HCOMP)',
-    'Expertise in Artificial Intelligence, Human-Centered AI, and HCI',
+    'Advancing human centered approaches to artificial intelligence and interactive systems',
+    'Contributing research to leading conferences including CHI, CSCW, and HCOMP',
+    'Specializing in responsible AI, social impact, and human technology collaboration',
   ],
   avatar: {
     srcPath: 'profile/claudia-profile.jpg',

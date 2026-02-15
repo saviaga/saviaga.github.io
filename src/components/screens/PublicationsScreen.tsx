@@ -17,11 +17,11 @@ const PublicationsScreen = (props: PublicationsScreenProps): React.ReactElement 
   return (
     <PageLayout>
       <SEO
-        title="Publications"
+        title="Selected Publications"
         description="Claudia Flores-Saviaga's academic publications and research"
       />
       <Row>
-        <PageHeader>Publications</PageHeader>
+        <PageHeader>Selected Publications</PageHeader>
       </Row>
       <PublicationsList publications={publications} />
     </PageLayout>
