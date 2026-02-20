@@ -24,7 +24,7 @@ const Greeting = (): React.ReactElement => {
 
   const publicationsLinkElement = (
     <span className="inline-block">
-      <HyperLink link={publicationsLink} className="underline underline-offset-2">publications</HyperLink>
+      <HyperLink link={publicationsLink} className="underline underline-offset-2">here</HyperLink>
     </span>
   );
 
@@ -43,7 +43,7 @@ const Greeting = (): React.ReactElement => {
       focuses on how alignment mechanisms operate in practice and how system behavior responds to real
       world interaction conditions.
       I have presented my work at leading conferences including CHI, CSCW, and HCOMP. You can explore my
-      research publications here. {publicationsLinkElement}.
+      research publications {publicationsLinkElement}.
     </p>
   );
 };
