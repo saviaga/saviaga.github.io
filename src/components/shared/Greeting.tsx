@@ -36,11 +36,14 @@ const Greeting = (): React.ReactElement => {
 
   return (
     <p className="font-light">
-      Hi there! I&apos;m Claudia, a researcher specializing in Human-Centered AI and
-      Human-Computer Interaction. My research focuses on understanding how technology
-      can better serve diverse communities through crowdsourcing, social computing, and
-      civic technology. I have presented my work at top-tier conferences including CHI, CSCW,
-      and HCOMP. You can explore my research {publicationsLinkElement}.
+      Hi! I&apos;m Claudia, a researcher specializing in Human Centered AI and Human Computer Interaction. My
+      work examines how AI systems interact with human behavior, culture, and institutions, and how these technologies perform in real world environments.
+      I apply methods from human computer interaction and computational social science to study large
+      language model behavior through empirical evaluation, behavioral testing, and constraint design. My work
+      focuses on how alignment mechanisms operate in practice and how system behavior responds to real
+      world interaction conditions.
+      I have presented my work at leading conferences including CHI, CSCW, and HCOMP. You can explore my
+      research publications here. {publicationsLinkElement}.
     </p>
   );
 };

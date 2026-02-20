@@ -4,11 +4,11 @@ import { socialLinks } from './socialLinks';
 export const profile: Profile = {
   firstName: 'Claudia',
   lastName: 'Flores-Saviaga, PhD.',
-  position: 'Human-Centered AI & HCI Researcher',
+  position: 'Human-Centered AI |  LLM Alignment and Evaluation',
   summary: [
-    'Advancing human centered approaches to artificial intelligence and interactive systems',
-    'Contributing research to leading conferences including CHI, CSCW, and HCOMP',
-    'Specializing in responsible AI, social impact, and human technology collaboration',
+    'Researching LLM behavior through empirical methods in real world interaction contexts',
+    'Conducting human centered AI research on interactive systems, accessibility, and real world technology use across diverse communities',
+    'Contributing sociotechnical and human AI interaction research to leading conferences including CHI, CSCW, and HCOMP',
   ],
   avatar: {
     srcPath: 'profile/claudia-profile.jpg',
