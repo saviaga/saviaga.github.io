@@ -1,4 +1,4 @@
-export const siteURL = 'https://saviaga.github.io';
+export const siteURL = 'https://saviaga.com';
 export const defaultSiteTitle = 'Claudia Flores-Saviaga';
 export const defaultSiteDescription = 'Human-Centered AI & HCI Researcher';
 export const brandName = 'Claudia Flores-Saviaga';
