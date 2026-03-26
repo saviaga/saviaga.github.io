@@ -1,24 +1,17 @@
 import React from 'react';
-// Temporarily disabled all imports to fix build issue
-/*
 import { FiStar } from '@react-icons/all-files/fi/FiStar';
 import Row from './Row';
 import HyperLink from './HyperLink';
 import { Link as LinkType } from '../../types/Link';
 import { numberToConciseString } from '../../utils/numbers';
-*/
 
 type StarsProps = {
-  link?: any, // LinkType,
+  link?: LinkType,
   stars?: number | null | undefined,
   className?: string,
 };
 
 const Stars = (props: StarsProps): React.ReactElement | null => {
-  // Temporarily disabled entire component to fix build issue
-  return null;
-  
-  /*
   const { stars = 0, className = '', link } = props;
 
   if (typeof stars !== 'number') {
@@ -45,7 +38,6 @@ const Stars = (props: StarsProps): React.ReactElement | null => {
       {starsElementsWrapped}
     </Row>
   );
-  */
 };
 
 export default Stars;

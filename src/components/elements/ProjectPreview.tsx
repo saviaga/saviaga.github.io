@@ -15,7 +15,7 @@ import CardTitle from '../shared/CardTitle';
 import CardActions from '../shared/CardActions';
 import ButtonLink from '../shared/ButtonLink';
 import Archived from '../shared/Archived';
-// import Stars from '../shared/Stars'; // Temporarily disabled
+import Stars from '../shared/Stars';
 import Row from '../shared/Row';
 import { getGitHubProjectStars, getProjectAchievementsLink } from '../../utils/project';
 import { Link } from '../../types/Link';
@@ -52,19 +52,17 @@ const ProjectPreview = (props: ProjectPreviewProps): React.ReactElement | null =
   );
 
   const projectStars = getGitHubProjectStars(project);
-  const projectStarsLink: Link | undefined = project?.srcURL?.url ? {
-    url: project.srcURL.url,
+  const projectStarsLink: Link = {
+    url: project?.srcURL?.url,
     caption: 'Stars on GitHub',
-  } : undefined;
-  // Temporarily disabled Stars component to fix build issue
-  const stars = null;
-  /*const stars = typeof projectStars === 'number' ? (
+  };
+  const stars = typeof projectStars === 'number' ? (
     <Stars
       stars={projectStars}
       link={projectStarsLink}
       className="text-xs text-gray-500 font-light"
     />
-  ) : null;*/
+  ) : null;
 
   /* eslint-disable react/no-array-index-key */
   const projectSummaryLines = project.summary ? project.summary.map(

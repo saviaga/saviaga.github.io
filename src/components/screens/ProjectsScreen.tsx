@@ -13,7 +13,7 @@ import ProjectFilters, {
   SortOption, supportedSortOptions,
 } from '../elements/ProjectFilters';
 import { getGitHubProjectStars, getTotalGetHubProjectStars, projectMapToArray } from '../../utils/project';
-// import Stars from '../shared/Stars'; // Temporarily disabled
+import Stars from '../shared/Stars';
 import { getStringSearchParam, setSearchParam } from '../../utils/url';
 
 type ProjectsScreenProps = {
@@ -102,13 +102,12 @@ const ProjectsScreen = (props: ProjectsScreenProps): React.ReactElement => {
       </Row>
       <Row className="mb-6 justify-between">
         <ProjectFilters onSort={onSort} sortBy={sortBy} />
-        {/* Temporarily disabled Stars component to fix build issue */}
-        {/*<Row className="ml-3">
+        <Row className="ml-3">
           <div className="text-sm text-gray-500 mr-1">
             Total stars:
           </div>
           <Stars stars={getTotalGetHubProjectStars(projects)} />
-        </Row>*/}
+        </Row>
       </Row>
       <ProjectsList projects={filteredProjects} />
     </PageLayout>
