@@ -1,4 +1,4 @@
-type Slug = 'home' | 'about' | 'projects' | 'publications' | 'contact' | 'ai-evaluation';
+type Slug = 'home' | 'about' | 'projects' | 'publications' | 'contact' | 'ai-evaluation' | 'clawbotcito';
 
 export type Route = {
   path: string;
@@ -32,13 +32,17 @@ export const routes: Routes = {
     path: 'https://saviaga.github.io/ai-safety-blog',
     name: 'AI Evaluation',
   },
+  clawbotcito: {
+    path: 'https://saviaga.com/Clawbotcito',
+    name: '🦞',
+  },
 };
 
 export const TOP_NAV: Route[] = [
   routes.about,
   routes.publications,
-  routes['ai-evaluation'],
   routes.contact,
+  routes.clawbotcito,
 ];
 
 export const FOOTER_NAV: Route[] = [];
