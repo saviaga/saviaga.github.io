@@ -52,10 +52,10 @@ const ProjectPreview = (props: ProjectPreviewProps): React.ReactElement | null =
   );
 
   const projectStars = getGitHubProjectStars(project);
-  const projectStarsLink: Link = {
-    url: project?.srcURL?.url,
+  const projectStarsLink: Link | undefined = project?.srcURL?.url ? {
+    url: project.srcURL.url,
     caption: 'Stars on GitHub',
-  };
+  } : undefined;
   const stars = typeof projectStars === 'number' ? (
     <Stars
       stars={projectStars}
