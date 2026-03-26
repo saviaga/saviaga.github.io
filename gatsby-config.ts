@@ -39,14 +39,7 @@ const gatsbyConfig: GatsbyConfig = {
       },
     },
 
-    // @see: https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts`,
-      },
-    },
+    // Posts moved to separate ai-safety-blog repository
 
     // @see: https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/
     {
