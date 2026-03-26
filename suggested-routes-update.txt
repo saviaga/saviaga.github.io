@@ -1,0 +1,20 @@
+// Add this to your routes.ts file:
+
+type Slug = 'home' | 'about' | 'projects' | 'blog' | 'publications' | 'contact' | 'ai-safety';
+
+export const routes: Routes = {
+  // ... existing routes ...
+  'ai-safety': {
+    path: 'https://saviaga.github.io/ai-safety-blog',
+    name: 'AI Safety',
+  },
+};
+
+export const TOP_NAV: Route[] = [
+  routes.about,
+  routes.publications,
+  routes['ai-safety'],  // Add this line
+  routes.contact,
+];
+
+// New menu would be: About | Publications | AI Safety | Contact
