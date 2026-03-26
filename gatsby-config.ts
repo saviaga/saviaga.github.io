@@ -1,6 +1,6 @@
 import { GatsbyConfig } from 'gatsby';
 import { GOOGLE_ANALYTICS_ID } from './src/config/analytics';
-import { rssPath } from './src/constants/links';
+// RSS removed - using separate ai-safety-blog
 import {
   metaFieldDescription,
   metaFieldSiteUrl,
@@ -39,14 +39,7 @@ const gatsbyConfig: GatsbyConfig = {
       },
     },
 
-    // @see: https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts`,
-      },
-    },
+    // Posts removed - using separate ai-safety-blog instead
 
     // @see: https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/
     {
@@ -143,64 +136,7 @@ const gatsbyConfig: GatsbyConfig = {
       },
     },
 
-    // @see: https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-an-rss-feed/
-    {
-      resolve: 'gatsby-plugin-feed',
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                ${metaFieldTitle}
-                ${metaFieldDescription}
-                ${metaFieldSiteUrl}
-                site_url: ${metaFieldSiteUrl}
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }: any): any => {
-              return allMdx.edges.map((edge: any): any => {
-                const url = site.siteMetadata[metaFieldSiteUrl] + edge.node.fields.slug;
-                return {
-                  ...edge.node.frontmatter,
-                  description: edge.node.frontmatter.summary,
-                  date: edge.node.frontmatter.date,
-                  url,
-                  guid: url,
-                  custom_elements: [{ 'content:encoded': edge.node.frontmatter.summary }],
-                };
-              });
-            },
-            query: `
-              {
-                allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-                  edges {
-                    node {
-                      fields {
-                        slug
-                      }
-                      frontmatter {
-                        title
-                        date
-                        summary
-                      }
-                      internal {
-                        contentFilePath
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: rssPath,
-            title: 'Trekhleb.dev RSS Feed',
-          },
-        ],
-      },
-    },
+    // RSS feed removed - no posts on main site (using separate ai-safety-blog)
   ],
 };
 
