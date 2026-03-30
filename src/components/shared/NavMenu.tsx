@@ -12,10 +12,10 @@ const NavMenu = (): React.ReactElement => {
       const url = route.path === '/' ? route.path : `${route.path}/`;
       const link: Link = { url };
       return (
-        <li key={route.path} className="ml-5">
+        <li key={route.path} className="ml-2 md:ml-5">
           <HyperLink
             link={link}
-            className="uppercase text-xs"
+            className="uppercase text-xs sm:text-xs"
             activeClassName="font-bold"
           >
             {route.name}
@@ -25,7 +25,7 @@ const NavMenu = (): React.ReactElement => {
     });
 
   return (
-    <ul className="flex flex-row">
+    <ul className="flex flex-row flex-wrap gap-2 md:gap-0">
       {links}
     </ul>
   );

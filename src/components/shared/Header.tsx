@@ -10,7 +10,7 @@ const Header = (props: HeaderProps): React.ReactElement => {
   const { className = '' } = props;
 
   return (
-    <header className={`flex flex-row items-center ${className}`}>
+    <header className={`flex flex-row flex-wrap items-center ${className}`}>
       <div className="mr-6">
         <Logo />
       </div>
