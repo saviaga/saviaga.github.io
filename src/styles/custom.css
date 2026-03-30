@@ -71,20 +71,51 @@ Mobile navigation fixes
 */
 @media (max-width: 640px) {
   header {
-    padding: 1rem 0;
+    padding: 0.5rem 0 !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  header nav {
+    width: 100% !important;
+    margin-top: 0.5rem !important;
   }
   
   header nav ul {
+    gap: 0.5rem !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+  }
+  
+  header nav ul li {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  header nav ul li a {
+    font-size: 0.7rem !important;
+    padding: 0.4rem 0.6rem !important;
+    white-space: nowrap !important;
+    display: block !important;
+  }
+}
+
+/* Stack navigation vertically on very small screens */
+@media (max-width: 480px) {
+  header nav ul {
+    flex-direction: column !important;
     gap: 0.25rem !important;
   }
   
   header nav ul li {
-    margin-left: 0.25rem !important;
+    width: 100% !important;
   }
   
   header nav ul li a {
-    font-size: 0.65rem !important;
-    padding: 0.25rem 0.4rem;
-    white-space: nowrap;
+    width: 100% !important;
+    text-align: left !important;
+    font-size: 0.8rem !important;
+    padding: 0.6rem 0.8rem !important;
   }
 }
