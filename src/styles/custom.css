@@ -67,82 +67,25 @@ Tooltip content styles
 }
 
 /*
-Mobile navigation fixes - Aggressive overrides for Tailwind
+Mobile navigation fixes
 */
-@media screen and (max-width: 640px) {
-  /* Header restructuring */
-  body header.flex.flex-row.items-center,
-  header.flex.flex-row.items-center {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    padding: 0.75rem 0 !important;
+@media (max-width: 640px) {
+  header {
+    padding: 1rem 0;
   }
   
-  /* Navigation container */
-  body header nav,
-  header nav {
-    width: 100% !important;
-    margin-top: 0.5rem !important;
-    margin-left: 0 !important;
-  }
-  
-  /* Navigation list */
-  body header nav ul.flex.flex-row,
-  header nav ul.flex.flex-row,
-  nav ul.flex.flex-row {
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    gap: 0.4rem !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
-  
-  /* Navigation items */
-  body header nav ul li,
-  header nav ul li,
-  nav ul li {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    flex-shrink: 0 !important;
-  }
-  
-  /* Navigation links */
-  body header nav ul li a,
-  header nav ul li a,
-  nav ul li a {
-    font-size: 0.65rem !important;
-    padding: 0.35rem 0.5rem !important;
-    white-space: nowrap !important;
-    display: inline-block !important;
-    line-height: 1.2 !important;
-    letter-spacing: 0.025em !important;
-  }
-}
-
-/* Ultra-small screens - stack vertically */
-@media screen and (max-width: 480px) {
-  body header nav ul.flex.flex-row,
-  header nav ul.flex.flex-row,
-  nav ul.flex.flex-row {
-    flex-direction: column !important;
+  header nav ul {
     gap: 0.25rem !important;
-    align-items: stretch !important;
+    flex-wrap: wrap !important;
   }
   
-  body header nav ul li,
-  header nav ul li,
-  nav ul li {
-    width: 100% !important;
+  header nav ul li {
+    margin-left: 0.25rem !important;
   }
   
-  body header nav ul li a,
-  header nav ul li a,
-  nav ul li a {
-    width: 100% !important;
-    text-align: left !important;
-    font-size: 0.75rem !important;
-    padding: 0.6rem 0.8rem !important;
-    display: block !important;
+  header nav ul li a {
+    font-size: 0.65rem !important;
+    padding: 0.25rem 0.4rem;
+    white-space: nowrap;
   }
 }
